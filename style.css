@@ -1,0 +1,171 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #344955;   /* background like image */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: #1c1c2b;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.5);
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #cfd8dc;
+}
+
+/* Display box */
+.display_conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2e2e44;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.display {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fdd835;   /* yellow text */
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.display::placeholder {
+  color: #aaa;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-btn i,
+.copy-btn img {
+  color: #fff;
+  filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+/* default state - hidden */
+#copyMsg {
+  opacity: 0;
+  transition: opacity 0.4s ease; /* smooth fade */
+}
+
+/* visible state */
+#copyMsg.active {
+  opacity: 1;
+}
+
+
+/* Input container */
+.input-container p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Password length section */
+.length-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.length-container p:last-child {
+  color: #fdd835;   /* yellow value */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  margin-bottom: 15px;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #a445b2, #fa4299);
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffeb3b;
+  cursor: pointer;
+  border: 2px solid #222;
+}
+
+/* Checkboxes */
+.input-container div {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-container label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Strength */
+.strength-conatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.strength-conatiner div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: grey; /* default */
+}
+
+/* Button */
+.generateButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #a445b2, #fa4299);
+  color: #fff;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.generateButton:hover {
+  transform: scale(1.05);
+}
